@@ -54,7 +54,7 @@ namespace SDL2
 			return System.Text.Encoding.UTF8.GetBytes(s + '\0');
 		}
 
-		internal static unsafe string UTF8_ToManaged(IntPtr s, bool freePtr = false)
+		public static unsafe string UTF8_ToManaged(IntPtr s, bool freePtr = false)
 		{
 			if (s == IntPtr.Zero)
 			{
